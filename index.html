@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Let's DG!</title>		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.css" />
+ 		<link rel="stylesheet" href="css/dg.css"/>
+		<link rel="stylesheet" href="css/twitter-ticker.css"/>
+		<link rel="stylesheet" href="css/jquery.jtweetsanywhere-1.3.1.css"/>
+		<!-- Javascript includes -->
+		<script type="application/javascript" src="js/initadd2home.js"></script>
+		<link rel="stylesheet" href="css/add2home.css"/>
+		<script type="application/javascript" src="js/add2home.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jtweetsanywhere-1.3.1.min.js"></script>
+		<script type="application/javascript" src="js/ios-orientationchange-fix.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.js"></script>
+		<!-- Icons -->
+		<link rel="icon" href="icon32.png"/>
+		<link rel="shortcut icon" href="icon32.png"/>
+		<link rel="apple-touch-icon" sizes="57x57" href="icon57.png"/>
+		<link rel="apple-touch-icon" sizes="72x72" href="icon72.png"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="icon114.png"/>
+		<link rel="apple-touch-icon-precomposed" sizes="android-only" href="icon57.png"/>
+		<!-- webapp -->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<link rel="apple-touch-startup-image" href="images/startup.png" media ="(max-device-width: 480px)"/>
+		<link rel="apple-touch-startup-image" href="images/startupipad.png" media ="screen and (min-device-width: 480px) and (max-device-width: 1024px) and (orientation:portrait)"/>
+	<noscript>You must have JavaScript turned on [Settings:Safari:JavaScript] to use this web app.</noscript>
+</head>
+<body>
+	<!-- Start of first page: #home -->
+		<section id="home" data-role="page" data-theme="b">
+			<header data-role="header">
+				</header>
+		<div data-role="content">
+			<h2>Flavor of the Day:</h2>
+			<div id="tweetFeed"></div>
+			<script type="text/javascript" src="js/twtrfotd.js"></script>
+			<div id="tweetFeed2"></div>
+			<script type="text/javascript" src="js/twtrprofile.js"></script>			
+		</div><!-- /content -->		
+		<footer data-role="footer" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+		<li><a href="#popupForecast" data-rel="popup" data-theme="b" data-icon="calendar">Forecast</a></li>
+		<li><a href="#info" data-transition="fade" data-theme="b" data-icon="info">More Info</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer>
+	</section><!-- /home -->
+	<!-- popup: #popupForecast -->
+	<section data-role="popup" id="popupForecast">
+		<a href="http://www.thedairygodmother.com/flavor-of-the-day-forecast/" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="fade" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c"class="ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Photo</span></span></a>
+	</section>
+
+<!-- Start of third page: #info -->
+<section id="info" data-role="page" data-theme="b" data-add-back-btn="true" data-title="Info">
+	<header data-role="header">
+		<p><h1>Let's DG!</h1></p>
+	</header>
+<div data-role="content">
+	<ul data-role="listview" data-inset="true">
+		<li><a href="mailto:indahaledev@gmail.com?subject=Let's DG">Suggestions, Bug Reports</a></li>
+		<li><a href="#dialog" data-rel="dialog" data-transition="pop">Need a Web App?</a></li>
+	</ul>
+	<script type="text/javascript" src="js/renderpics.js"></script>
+	<script type="text/javascript" src="http://api.twicsy.com/user/DairyGodmother/max/10/callback/renderpics"></script>
+	<div class="disclaimer">
+		<p></p>
+<p>Sources for this application are derived from Twitter and Flickr. The Dairy Godmother does not own, operate, or maintain Let's DG! (.com/app). </p>
+		<br></br>
+		<p></p>Modified: 02-August-2012
+	</div>
+</div><!-- /content -->
+<footer data-role="footer" data-position="fixed" data-theme="a">
+	<div id="twitter"></div>
+    <script type="text/javascript" src="js/jquery.twitter-ticker.js"></script>
+</footer>
+</section><!-- /info -->
+<!-- Start of popup page: #dialog -->
+<section data-role="dialog" id="dialog">
+		<header data-role="header" data-theme="e" data-position="inline">
+			<h1>&#xe252;Goodbye ... </h1>
+		</header>
+		<div data-role="content" data-theme="e">
+			<h3>Leaving Let's DG!</h3>
+			<a href="http://indahale.wordpress.com/" target="_blank" data-role="button" data-theme="c">Ok</a>
+			<a href="#" data-role="button" data-rel="back" data-theme="c">Cancel</a>  
+		</div>
+	</section><!-- /dialog -->
+</body>
+</html>
+		
+	

@@ -1,0 +1,11 @@
+#twitter{
+	margin: 0 auto;
+    width: 30em;
+}
+div.tweet {
+	font-size: 1em;
+	display: none;
+}
+div.tweet small {
+	display: block;
+}

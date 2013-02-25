@@ -1,0 +1,86 @@
+/* calendar icon from:
+GLYPHISH FREE - 200 icons
+Created by Joseph Wain, 2010 – 2011
+Web: http://glyphish.com or http://penandthink.com
+Twitter: @glyphish or @jpwain
+*/
+
+* {
+        -webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-webkit-text-size-adjust: none;
+}
+/* Background colors from The Dairy Godmother website January 2011 */
+.ui-body-b {
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, #000852),
+		color-stop(1, #6699FF)) !important;
+	background-image: -moz-linear-gradient(top, #000852, #6699FF) !important;
+}
+h1{
+	text-align: center;
+	font-family: Marker Felt, Arial, sans-serif;
+	color: #fff;
+	text-shadow:none;	
+}
+h2{
+	text-align: center;
+	font-family: Marker Felt, Arial, sans-serif;
+	color: #fff;
+	text-shadow:none;	
+}
+h3{
+	text-align: center;
+	font-family: Marker Felt, Arial, sans-serif;
+	color: #000;
+	text-shadow:none;	
+}
+#flickrImages {
+
+}
+.#lickrImages img {
+	width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+.ui-icon-calendar{
+	background-image:url('./images/calendar.png');
+	 }
+.disclaimer{
+	font-size:.7em;
+	color:#fff;
+	text-shadow:none;
+	font-family:sans-serif;
+	background-image:url('./images/twitflic.png');
+	background-repeat:no-repeat;
+	background-position: left top;
+	overflow:hidden;
+}
+#tweetFeed .jta-tweet-list
+{
+  height: 50px;
+  overflow: auto;
+}
+#tweetFeed .jta-tweet-list-item
+{
+  font-family: Marker Felt, Arial, sans-serif;
+  font-size: large;
+  text-align: center;
+  background-color: #fff;
+  color: #660011;
+}
+#tweetFeed2 .jta-tweet-list-item
+{
+  font-size: small;
+  pointer-events: none;
+}
+/* Twitter-Ticker */
+#twitter{
+  font: normal 18px Verdana, sans-serif;
+  border: 1px none black;
+  padding: 0.25em 0.1em;
+  /* For best results, set height to some multiple of line-height (default 1.2em) */
+  height: 1.2em;
+  width: 40em;
+}
